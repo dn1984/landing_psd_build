@@ -26,7 +26,8 @@
 .container {
   max-width: 1765px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .banner {
   background: #212121 url("static/images/banner.jpg") no-repeat;
