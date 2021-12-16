@@ -72,22 +72,9 @@
     margin: 0 auto 64px; }
   .video__container {
     position: relative;
-    border: solid 1px #d8b4a6;
     display: inline-block;
-    width: 731px;
-    height: 456px;
-    margin-bottom: 150px; }
-    .video__container:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: solid 1px #d8b4a6;
-      width: 800px;
-      height: 526px;
-      z-index: 10; }
+    width: 1300px;
+    margin-bottom: 80px; }
   .video__text {
     color: #dbd6d6;
     font-size: 20px;
@@ -100,27 +87,27 @@
   text-align: center;
   width: 61%;
   margin: 0 auto 39px;
-  font-weight: 500; }
+  font-weight: 400; }
 
 .advantages__border-line {
   margin-bottom: 29px; }
 
-.advantages__block-1, .advantages__block-3 {
+.advantages__block-1, .advantages__block-3, .advantages__block-5 {
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
   padding-top: 15px; }
 
-.advantages__block-1_content, .advantages__block-3_content {
+.advantages__block-1_content, .advantages__block-3_content, .advantages__block-5_content {
   margin-right: 53px;
   padding-top: 11px;
   position: relative; }
 
-.advantages__block-1_image, .advantages__block-2_image, .advantages__block-3_image {
+.advantages__block-1_image, .advantages__block-2_image, .advantages__block-3_image, .advantages__block-4_image, .advantages__block-5_image, .advantages__block-6_image {
   width: 602px;
   height: 457px; }
 
-.advantages__block-1_title, .advantages__block-3_title {
+.advantages__block-1_title, .advantages__block-3_title, .advantages__block-5_title {
   text-align: right;
   color: #e8b19c;
   font-weight: 400;
@@ -128,15 +115,15 @@
   margin-bottom: 24px;
   text-transform: uppercase; }
 
-.advantages__block-1_text, .advantages__block-3_text {
+.advantages__block-1_text, .advantages__block-3_text, .advantages__block-5_text {
   color: #f4e7de;
   font-size: 25px;
   line-height: 31px; }
 
-.advantages__block-1_container, .advantages__block-3_container {
+.advantages__block-1_container, .advantages__block-3_container, .advantages__block-5_container {
   text-align: left; }
 
-.advantages__block-1_border, .advantages__block-2_border, .advantages__block-3_border {
+.advantages__block-1_border, .advantages__block-2_border, .advantages__block-3_border, .advantages__block-4_border, .advantages__block-5_border, .advantages__block-6_border {
   position: absolute;
   bottom: -49px; }
 
@@ -164,22 +151,41 @@
     font-size: 70px;
     z-index: 10; }
 
-.advantages__block-2 {
+.advantages__block-5_image-box {
+  position: relative; }
+  .advantages__block-5_image-box::after {
+    content: 'Картинка № 5';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #f4e7de;
+    text-transform: uppercase;
+    font-size: 70px;
+    z-index: 10; }
+
+.advantages__block-2, .advantages__block-4 {
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
   padding-top: 84px;
   margin-bottom: 84px; }
 
-.advantages__block-2_content {
+.advantages__block-6 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-top: 84px;
+  margin-bottom: 50px; }
+
+.advantages__block-2_content, .advantages__block-4_content, .advantages__block-6_content {
   margin-left: 53px;
   padding-top: 11px;
   position: relative; }
 
-.advantages__block-2_container {
+.advantages__block-2_container, .advantages__block-4_container, .advantages__block-6_container {
   text-align: left; }
 
-.advantages__block-2_title {
+.advantages__block-2_title, .advantages__block-4_title, .advantages__block-6_title {
   text-align: right;
   color: #e8b19c;
   font-weight: 400;
@@ -187,7 +193,7 @@
   margin-bottom: 24px;
   text-transform: uppercase; }
 
-.advantages__block-2_text {
+.advantages__block-2_text, .advantages__block-4_text, .advantages__block-6_text {
   color: #f4e7de;
   font-size: 25px;
   line-height: 31px; }
@@ -203,3 +209,117 @@
     text-transform: uppercase;
     font-size: 70px;
     z-index: 10; }
+
+.advantages__block-4_image-box {
+  position: relative; }
+  .advantages__block-4_image-box::after {
+    content: 'Картинка № 4';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #f4e7de;
+    text-transform: uppercase;
+    font-size: 70px;
+    z-index: 10; }
+
+.advantages__block-6_image-box {
+  position: relative; }
+  .advantages__block-6_image-box::after {
+    content: 'Картинка № 6';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #f4e7de;
+    text-transform: uppercase;
+    font-size: 70px;
+    z-index: 10; }
+
+.help {
+  text-align: center;
+  padding-bottom: 25px; }
+  .help__border-line {
+    margin-bottom: 40px; }
+  .help__title {
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 43px;
+    margin-bottom: 46px; }
+  .help__text, .help__list_item {
+    margin-bottom: 30px; }
+  .help__text, .help__list {
+    color: #f4e7de;
+    text-align: left;
+    font-size: 34px;
+    line-height: 33px; }
+  .help__list {
+    list-style-type: none; }
+  .help__text a {
+    text-decoration: none;
+    color: #f4e7de; }
+
+.specifications {
+  text-align: center;
+  padding-bottom: 45px; }
+  .specifications__border-line {
+    margin-bottom: 40px; }
+  .specifications__title {
+    text-transform: uppercase;
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 43px;
+    margin-bottom: 46px; }
+  .specifications__list {
+    list-style-type: none;
+    color: #f4e7de;
+    text-align: left;
+    font-size: 34px;
+    line-height: 33px; }
+  .specifications__list_item {
+    margin-bottom: 22px; }
+
+.conditions {
+  text-align: center;
+  padding-bottom: 45px; }
+  .conditions__border-line {
+    margin-bottom: 40px; }
+  .conditions__title {
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 43px;
+    margin-bottom: 46px; }
+  .conditions__list {
+    list-style-type: none;
+    color: #f4e7de;
+    text-align: left;
+    font-size: 34px;
+    line-height: 33px; }
+  .conditions__list_item {
+    margin-bottom: 22px; }
+
+.price {
+  text-align: center;
+  padding-bottom: 300px; }
+  .price__border-line {
+    margin-bottom: 60px; }
+  .price__title {
+    text-transform: uppercase;
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 33px; }
+  .price__value_box {
+    margin-bottom: 40px; }
+  .price__value {
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 72px; }
+  .price__money {
+    color: #e8b19c;
+    font-weight: 400;
+    font-size: 43px; }
+  .price__buy-btn {
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    border: none; }
