@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   background: linear-gradient(#493e3a, #202020);
   padding: 28px 0; }
@@ -31,19 +30,18 @@
 
 .banner {
   background: #212121 url("static/images/banner.jpg") no-repeat;
-  padding: 165px 0 125px;
+  padding: 165px 100px 125px 0;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 100px; }
+  justify-content: flex-end; }
   .banner__content {
     text-align: center;
-    width: 60%; }
+    width: 58vw; }
   .banner__title {
     color: #fff;
     text-transform: uppercase;
     font-family: var(--font-cambria);
     font-weight: normal;
-    font-size: 68px;
+    font-size: 3.5vw;
     letter-spacing: 2px;
     margin-bottom: 100px; }
   .banner__subtitle {
@@ -51,7 +49,7 @@
     text-transform: uppercase;
     font-family: var(--font-cambria);
     font-weight: normal;
-    font-size: 50px;
+    font-size: 2.6vw;
     letter-spacing: 2px;
     margin-bottom: 115px; }
   .banner__text {
@@ -61,7 +59,7 @@
     font-weight: normal;
     letter-spacing: 2px;
     line-height: 66px;
-    font-size: 36px; }
+    font-size: 1.9vw; }
 
 .video {
   box-sizing: border-box;
@@ -69,7 +67,8 @@
   padding-bottom: 52px; }
   .video__border {
     display: block;
-    margin: 0 auto 64px; }
+    margin: 0 auto 64px;
+    width: 56vw; }
   .video__container {
     position: relative;
     display: inline-block;
@@ -125,43 +124,8 @@
 
 .advantages__block-1_border, .advantages__block-2_border, .advantages__block-3_border, .advantages__block-4_border, .advantages__block-5_border, .advantages__block-6_border {
   position: absolute;
-  bottom: -49px; }
-
-.advantages__block-1_image-box {
-  position: relative; }
-  .advantages__block-1_image-box::after {
-    content: 'Картинка № 1';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
-
-.advantages__block-3_image-box {
-  position: relative; }
-  .advantages__block-3_image-box::after {
-    content: 'Картинка № 3';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
-
-.advantages__block-5_image-box {
-  position: relative; }
-  .advantages__block-5_image-box::after {
-    content: 'Картинка № 5';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
+  bottom: -49px;
+  width: 56vw; }
 
 .advantages__block-2, .advantages__block-4 {
   display: flex;
@@ -197,42 +161,6 @@
   color: #f4e7de;
   font-size: 25px;
   line-height: 31px; }
-
-.advantages__block-2_image-box {
-  position: relative; }
-  .advantages__block-2_image-box::after {
-    content: 'Картинка № 2';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
-
-.advantages__block-4_image-box {
-  position: relative; }
-  .advantages__block-4_image-box::after {
-    content: 'Картинка № 4';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
-
-.advantages__block-6_image-box {
-  position: relative; }
-  .advantages__block-6_image-box::after {
-    content: 'Картинка № 6';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    color: #f4e7de;
-    text-transform: uppercase;
-    font-size: 70px;
-    z-index: 10; }
 
 .help {
   text-align: center;
@@ -296,6 +224,9 @@
   .conditions__list_item {
     margin-bottom: 22px; }
 
+*[class$="__border-line"] {
+  width: 64vw; }
+
 .price {
   text-align: center;
   padding-bottom: 300px; }
@@ -322,4 +253,126 @@
     text-decoration: none;
     background: none;
     padding: 0;
-    border: none; }
+    border: none;
+    cursor: pointer; }
+  .price__buy-btn_image {
+    width: 321px; }
+
+@media screen and (max-width: 1770px) {
+  .container {
+    width: 95%; }
+  .container-menu {
+    max-width: none;
+    width: 98%; }
+  .banner {
+    background-position: left -24% top 0;
+    padding: 65px 0 260px; }
+  .header__item {
+    font-size: 1.4vw; } }
+
+@media screen and (max-width: 1439px) {
+  .logo {
+    width: 20%; }
+  .banner {
+    background-size: 70%;
+    padding: 65px 0 14vw; }
+    .banner__text {
+      line-height: 50px; }
+  .video__container {
+    width: 90%; }
+  .header__list {
+    margin-right: 0px; }
+  .price__title {
+    font-size: 4vw; }
+    .price__title br {
+      display: none; }
+  .price__value {
+    font-size: 5vw; }
+  .price__money {
+    font-size: 4vw; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 9px 0; }
+  .logo {
+    margin-left: 38px; }
+  .header__items {
+    margin-right: 21px; }
+  .banner {
+    background-size: 57%;
+    background-position: left -9% top -5px;
+    padding: 65px 0 4vw; }
+  .banner__content {
+    width: 70vw; }
+  .banner__subtitle {
+    margin-bottom: 50px; }
+  .banner__title {
+    margin-bottom: 50px; }
+  .banner__text {
+    line-height: 30px; }
+  .video__container {
+    width: 692px; }
+  .video__text {
+    font-size: 15px;
+    line-height: 25px; }
+  .price__buy-btn_image {
+    width: 80%; }
+  .price__title {
+    line-height: 170%; } }
+
+@media screen and (max-width: 698px) {
+  .logo {
+    width: 27%;
+    margin-left: 20px; }
+  .header__item {
+    font-size: 2vw; }
+  .banner__content {
+    width: 100%; }
+  .video__container {
+    width: 98%; }
+  .banner {
+    padding: 340px 0 4vw;
+    background-position-x: center;
+    background-size: 380px; }
+    .banner__text {
+      font-size: 3.2vw; }
+  .banner__title {
+    margin-bottom: 5%;
+    font-size: 4.2vw; }
+  .banner__subtitle {
+    margin-bottom: 5%;
+    font-size: 3.3vw; }
+  .price__buy-btn_image {
+    width: 40vw; } }
+
+@media screen and (max-width: 395px) {
+  .header {
+    padding: 15px 0; }
+  .logo {
+    width: 45%;
+    margin: 0 auto; }
+  .header__nav {
+    display: none; }
+  .banner {
+    background-size: 90%;
+    padding: 80% 0 4vw; }
+  .video__container {
+    width: 100%;
+    margin-bottom: 20%; }
+  .banner__text {
+    font-size: 4vw;
+    line-height: 25px; }
+  .banner__title {
+    font-size: 5.4vw; }
+  .banner__subtitle {
+    font-size: 4.1vw; }
+  .price {
+    padding-bottom: 150px; }
+  .price__title {
+    font-size: 5vw; }
+  .price__title br {
+    display: block; }
+  .price__value {
+    font-size: 10vw; }
+  .price__money {
+    font-size: 8vw; } }
