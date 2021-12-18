@@ -1,3 +1,60 @@
+.mobile-menu {
+  position: fixed;
+  overflow-y: auto;
+  pointer-events: visiblestroke;
+  top: 35px;
+  left: 10%;
+  height: 100%;
+  text-align: left;
+  display: block;
+  z-index: 20;
+  -webkit-animation: movemobileMenu 700ms ease-in-out;
+  animation: movemobileMenu 700ms ease-in-out; }
+  .mobile-menu-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 5;
+    -webkit-animation: movemobileMenu 500ms ease-in-out;
+    animation: movemobileMenu 500ms ease-in-out; }
+  .mobile-menu__close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 25px; }
+  .mobile-menu__list {
+    list-style-type: none;
+    margin-top: 0; }
+  .mobile-menu__items {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .mobile-menu__link {
+    text-decoration: none;
+    color: #e8b19c; }
+
+@-webkit-keyframes movemobileMenu {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0%); } }
+
+@keyframes movemobileMenu {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0%); } }
+
+.mobile-menu-close_js {
+  display: none; }
+
+.mobile-menu-open_js {
+  display: block; }
+
 .header {
   background: linear-gradient(#493e3a, #202020);
   padding: 28px 0; }
@@ -13,6 +70,24 @@
     font-family: var(--font-sourceSerifPro);
     font-size: 25px;
     letter-spacing: 2px; }
+  .header__mobile-menu-btn {
+    display: none;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin-left: 17px;
+    position: absolute; }
+  .header__mobile-menu_list {
+    list-style-type: none; }
+  .header__mobile-menu_item {
+    background-color: #e8b19c;
+    width: 40px;
+    height: 4px;
+    line-height: 0; }
+  .header__mobile-menu_item:not(:last-child) {
+    margin-bottom: 5px; }
 
 .container-menu {
   max-width: 1866px;
@@ -80,6 +155,9 @@
     text-align: left;
     line-height: 31px; }
 
+.advantages__border-mobile {
+  display: none; }
+
 .advantages__title {
   color: #e8b19c;
   font-size: 35px;
@@ -127,7 +205,7 @@
   bottom: -49px;
   width: 56vw; }
 
-.advantages__block-2, .advantages__block-4 {
+.advantages__block-2, .advantages__block-4, .advantages__block-6 {
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
@@ -135,10 +213,6 @@
   margin-bottom: 84px; }
 
 .advantages__block-6 {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 30px;
-  padding-top: 84px;
   margin-bottom: 50px; }
 
 .advantages__block-2_content, .advantages__block-4_content, .advantages__block-6_content {
@@ -268,7 +342,73 @@
     background-position: left -24% top 0;
     padding: 65px 0 260px; }
   .header__item {
-    font-size: 1.4vw; } }
+    font-size: 1.4vw; }
+  .advantages__border-mobile {
+    display: block;
+    margin: 4% auto 0;
+    width: 65vw; }
+  .advantages__block-1,
+  .advantages__block-3,
+  .advantages__block-5 {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    padding-top: 0; }
+  .advantages__block-2,
+  .advantages__block-4,
+  .advantages__block-6 {
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .advantages__block-2_content,
+  .advantages__block-4_content,
+  .advantages__block-6_content {
+    margin-left: 0;
+    padding-top: 0;
+    margin-bottom: 2%; }
+  .advantages__block-2_title,
+  .advantages__block-4_title,
+  .advantages__block-6_title {
+    text-align: center; }
+  .advantages__block-2_container,
+  .advantages__block-4_container,
+  .advantages__block-6_container {
+    text-align: center; }
+  .advantages__block-1_title,
+  .advantages__block-3_title,
+  .advantages__block-5_title {
+    text-align: center; }
+  .advantages__border-line {
+    margin-bottom: 3%; }
+  .advantages__title {
+    width: 90%;
+    margin: 0 auto 3%; }
+  .advantages__block-1_container,
+  .advantages__block-3_container,
+  .advantages__block-5_container {
+    text-align: center; }
+  .advantages__block-1_content,
+  .advantages__block-3_content,
+  .advantages__block-5_content {
+    margin-right: 0;
+    margin-bottom: 2%; }
+  .advantages__block-1_border,
+  .advantages__block-2_border,
+  .advantages__block-3_border,
+  .advantages__block-4_border,
+  .advantages__block-5_border,
+  .advantages__block-6_border {
+    display: none; }
+  .help {
+    margin-top: 3%; }
+  .help__title {
+    font-size: 2.6vw; }
+  .help__text,
+  .help__list {
+    font-size: 1.8vw;
+    line-height: 1.8vw; } }
 
 @media screen and (max-width: 1439px) {
   .logo {
@@ -289,7 +429,15 @@
   .price__value {
     font-size: 5vw; }
   .price__money {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+  .help__text,
+  .help__list {
+    text-align: center;
+    font-size: 2.2vw;
+    line-height: 2vw; }
+  .help__text,
+  .help__list_item {
+    margin-bottom: 3%; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -311,14 +459,49 @@
   .banner__text {
     line-height: 30px; }
   .video__container {
-    width: 692px; }
+    width: 100%; }
   .video__text {
     font-size: 15px;
     line-height: 25px; }
   .price__buy-btn_image {
     width: 80%; }
   .price__title {
-    line-height: 170%; } }
+    line-height: 170%; }
+  .advantages__block-1_title,
+  .advantages__block-3_title,
+  .advantages__block-5_title,
+  .advantages__block-2_title,
+  .advantages__block-4_title,
+  .advantages__block-6_title,
+  .advantages__title,
+  .help__title,
+  .specifications__title,
+  .conditions__title {
+    font-size: 3.2vw; }
+  .advantages__block-1_text,
+  .advantages__block-3_text,
+  .advantages__block-5_text,
+  .advantages__block-2_text,
+  .advantages__block-4_text,
+  .advantages__block-6_text,
+  .specifications__list,
+  .conditions__list {
+    font-size: 2.7vw; }
+  .conditions__list_item {
+    margin-bottom: 3%; }
+  .advantages__block-1_image,
+  .advantages__block-2_image,
+  .advantages__block-3_image,
+  .advantages__block-4_image,
+  .advantages__block-5_image,
+  .advantages__block-6_image {
+    width: 59%;
+    height: auto; }
+  .help__text,
+  .help__list {
+    text-align: center;
+    font-size: 2.3vw;
+    line-height: 2.2vw; } }
 
 @media screen and (max-width: 698px) {
   .logo {
@@ -343,11 +526,43 @@
     margin-bottom: 5%;
     font-size: 3.3vw; }
   .price__buy-btn_image {
-    width: 40vw; } }
+    width: 40vw; }
+  .help__text,
+  .help__list {
+    line-height: 3vw; } }
+
+@media screen and (max-width: 500px) {
+  .advantages__block-1_title,
+  .advantages__block-3_title,
+  .advantages__block-5_title,
+  .advantages__block-2_title,
+  .advantages__block-4_title,
+  .advantages__block-6_title,
+  .advantages__title,
+  .help__title,
+  .specifications__title,
+  .conditions__title {
+    font-size: 4vw; }
+  .advantages__block-1_text,
+  .advantages__block-3_text,
+  .advantages__block-5_text,
+  .advantages__block-2_text,
+  .advantages__block-4_text,
+  .advantages__block-6_text,
+  .specifications__list,
+  .conditions__list {
+    font-size: 3.3vw;
+    line-height: 6vw; }
+  .help__text,
+  .help__list {
+    font-size: 3.3vw;
+    line-height: 4.3vw; } }
 
 @media screen and (max-width: 395px) {
   .header {
-    padding: 15px 0; }
+    padding: 24px 0; }
+  .banner {
+    background-position: left 150% top -5px; }
   .logo {
     width: 45%;
     margin: 0 auto; }
@@ -375,4 +590,31 @@
   .price__value {
     font-size: 10vw; }
   .price__money {
-    font-size: 8vw; } }
+    font-size: 8vw; }
+  .advantages__block-1_title,
+  .advantages__block-3_title,
+  .advantages__block-5_title,
+  .advantages__block-2_title,
+  .advantages__block-4_title,
+  .advantages__block-6_title,
+  .advantages__title,
+  .help__title,
+  .specifications__title,
+  .conditions__title {
+    font-size: 5vw; }
+  .advantages__block-1_text,
+  .advantages__block-3_text,
+  .advantages__block-5_text,
+  .advantages__block-2_text,
+  .advantages__block-4_text,
+  .advantages__block-6_text,
+  .specifications__list,
+  .conditions__list {
+    font-size: 4vw;
+    line-height: 6.5vw; }
+  .help__text,
+  .help__list {
+    font-size: 4vw;
+    line-height: 5vw; }
+  .header__mobile-menu-btn {
+    display: block; } }
