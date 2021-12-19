@@ -69,9 +69,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     // Если отступ сверху больше 1500px то показываем кнопку "Наверх"
     if ($(this).scrollTop() > 1500) {
-      $('#button-up').fadeIn();
+      $('#button-up').removeClass('hidden');
     } else {
-      $('#button-up').fadeOut();
+      $('#button-up').addClass('hidden');
     }
   });
   /** При нажатии на кнопку мы перемещаемся к началу страницы */
