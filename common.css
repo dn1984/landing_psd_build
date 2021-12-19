@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   margin: 0;
   background: #212121;
   font-family: var(--font-cambria);
   font-weight: normal;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  width: 100%;
+  overflow-x: hidden; }
 
 a,
 div,
